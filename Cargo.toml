@@ -1,0 +1,14 @@
+[package]
+name = "lsp-servers-cli"
+version = "0.1.0"
+edition = "2024"
+description = "Provides a list of relevant language servers for a given directory."
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "lsp-servers"    
+path = "src/main.rs"
+
+[dependencies]
+lsp-servers = "0.1.3"
+walkdir = "2.5.0"
